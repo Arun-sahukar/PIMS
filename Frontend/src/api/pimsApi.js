@@ -3,9 +3,14 @@ import { clearSession, getStoredRole, getStoredToken } from '../utils/session';
 
 export const SESSION_EXPIRED_EVENT = 'pims:session-expired';
 
+const API_TIMEOUT_MS = 15000;
+
 const apiClient = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
-  timeout: 15000
+  timeout: API_TIMEOUT_MS,
+  headers: {
+    'Content-Type': 'application/json'
+  }
 });
 
 apiClient.interceptors.request.use((config) => {
