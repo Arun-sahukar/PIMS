@@ -30,3 +30,17 @@ Backend/.venv/
 Backend/venv/
 Backend/*.sqlite3
 Backend/*.db
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Test artifacts
+.nyc_output/
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
