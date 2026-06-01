@@ -3,6 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "Pharmacy Information Management System - Full-stack healthcare application",
+  "author": "Arun-sahukar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arun-sahukar/PIMS.git"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
@@ -13,6 +20,12 @@
     "morgan": "^1.10.1"
   },
   "scripts": {
-    "build": "npm run build --prefix Backend"
+    "build": "npm run build --prefix Backend",
+    "dev:backend": "npm run dev --prefix Backend",
+    "dev:frontend": "npm run dev --prefix Frontend",
+    "test": "npm run test --prefix Backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
